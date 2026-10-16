@@ -1,0 +1,15 @@
+:root{
+    --color-fondo-header:rgb(255, 232, 103);
+}
+
+.header_movil{
+    display:grid;
+    background-color: var(--color-fondo-header);
+}
+.columnas_3{
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.boton_hamburguesa{
+    text-align: right;
+}
+
