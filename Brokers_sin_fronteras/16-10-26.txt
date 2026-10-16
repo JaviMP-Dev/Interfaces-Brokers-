@@ -1,0 +1,10 @@
+MAIN
+GALERIA
+HAZTE SOCIO
+ACTIVIDADES/TALLERES
+
+HEADER - Andre/David Lp
+FOOTER - Javi/David Lr
+
+Colores: Amarillo (El que viene en la pag oficial)
+Logo: El oficial
