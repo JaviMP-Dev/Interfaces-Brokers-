@@ -1,0 +1,8 @@
+--- P R O M P T S ---
+
+-Cra una pagina web sobre una asociacion de ayuda a discapacitados basandote en esta pagina: https://www2.cruzroja.es/
+usa colores amarillos para el css y usa la menor cantidad de jscript posible, de preferencia 0.
+
+-Bien, ahora separame el css y el jtml en dos archivos distintos, y cambia el nombre de la pagina por asociacion caminando, quita todos los comentarios del codigo html y en el menu desplegable debe llevar los apartados que se ven en la imagen, y dame un archivo zip con el proyecto
+
+-Quita las opciones de accesibilidad como el alto contraste
