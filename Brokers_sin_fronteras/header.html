@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Header Responsive - Cruz Roja</title>
+
+
+
+    <link rel="stylesheet" href="estiloheader.css">
+
+<body>
+
+<header class="header">
+    <div class="contenedor">
+
+        <div class="barra-principal">
+
+            <!-- LOGO -->
+            <a href="#" class="logo">
+                
+                <span class="logo-texto">Asociacion Caminando</span>
+            </a>
+
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Abrir o cerrar menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- NAVEGACIÓN -->
+            <nav class="navegacion" id="navegacion">
+
+                <!-- APARTADO CON SUBMENÚ -->
+                <div class="nav-item">
+                    <a href="#que-hacemos" class="nav-enlace">
+                        1
+                        <i class="fa-solid fa-chevron-down flecha"></i>
+                    </a>
+
+                    <ul class="submenu">
+                        <li><a href="#accion-social">1.1</a></li>
+                        <li><a href="#salud">1.2</a></li>
+                        <li><a href="#emergencias">1.3</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#colabora" class="nav-enlace">2</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#voluntariado" class="nav-enlace">3</a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="#formate" class="nav-enlace">4</a>
+                </div>
+
+            </nav>
+
+
+        </div>
+    </div>
+</header>
+<script src="header.js"></script>
+
+</body>
+</html>

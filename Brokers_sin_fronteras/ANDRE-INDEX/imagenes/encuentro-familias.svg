@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <rect width="600" height="340" fill="#FEF3C7"/>
+  <circle cx="300" cy="185" r="120" fill="#FDE68A"/>
+  <path d="M300 72c-20-22-56-14-62 15-5 31 29 56 62 84 33-28 67-53 62-84-6-29-42-37-62-15z" fill="#F4B400" stroke="#1A1A1A" stroke-width="3"/>
+  <g transform="translate(135, 190)">
+    <circle cx="45" cy="24" r="18" fill="#1A1A1A"/>
+    <path d="M15 95c0-18 13-32 30-32s30 14 30 32" fill="#9C9E31" stroke="#1A1A1A" stroke-width="3"/>
+    <circle cx="165" cy="20" r="20" fill="#1A1A1A"/>
+    <path d="M130 95c0-20 15-36 35-36s35 16 35 36" fill="#F4B400" stroke="#1A1A1A" stroke-width="3"/>
+    <circle cx="285" cy="24" r="18" fill="#1A1A1A"/>
+    <path d="M255 95c0-18 13-32 30-32s30 14 30 32" fill="#FFFDF5" stroke="#1A1A1A" stroke-width="3"/>
+  </g>
+  <rect x="28" y="24" width="245" height="34" rx="17" fill="#1A1A1A"/>
+  <text x="150" y="46" text-anchor="middle" fill="#FFCA28" font-family="sans-serif" font-weight="800" font-size="14">ENCUENTRO DE FAMILIAS</text>
+</svg>

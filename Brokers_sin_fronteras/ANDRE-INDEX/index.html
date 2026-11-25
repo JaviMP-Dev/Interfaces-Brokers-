@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asociación Caminando — Apoyo a personas con discapacidad, inclusión, actividades, talleres y transparencia.">
+  <title>Asociación Caminando | Cada vez más cerca de las personas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <input type="checkbox" id="interruptor-menu-movil" class="solo-lectores">
+
+  <div class="contenedor-pagina" id="inicio">
+    <a href="#contenido-principal" class="enlace-saltar">Saltar al contenido principal</a>
+
+    <div class="barra-superior">
+      <div class="contenedor barra-superior__interior">
+        <span class="barra-superior__aviso">Asociación sin ánimo de lucro de apoyo a personas con discapacidad</span>
+        <nav class="enlaces-secundarios" aria-label="Enlaces institucionales secundarios">
+          <a href="#contacto">Contacto</a>
+          <a href="#ventana-socios">Área Socios</a>
+          <a href="#actividades">Sala de Prensa</a>
+        </nav>
+      </div>
+    </div>
+
+    <header class="cabecera-sitio">
+      <div class="contenedor cabecera-sitio__interior">
+        <a href="#" class="marca-asociacion" aria-label="Asociación Caminando - Inicio">
+          <div class="marca-asociacion__emblema" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="38" height="38">
+              <circle cx="20" cy="20" r="18" fill="#1A1A1A"/>
+              <path d="M17 8h6v9h9v6h-9v9h-6v-9H8v-6h9V8z" fill="#F4B400"/>
+              <circle cx="20" cy="20" r="3" fill="#FFFDF5"/>
+            </svg>
+          </div>
+          <div class="marca-asociacion__textos">
+            <span class="marca-asociacion__nombre">Asociación Caminando</span>
+            <span class="marca-asociacion__lema">Cada vez más cerca de las personas</span>
+          </div>
+        </a>
+
+        <nav class="navegacion-principal" aria-label="Navegación principal">
+          <ul class="navegacion-principal__lista">
+            <li class="elemento-menu">
+              <a href="#bienvenida" class="elemento-menu__enlace">BIENVENIDA</a>
+            </li>
+            <li class="elemento-menu">
+              <a href="#galeria" class="elemento-menu__enlace">GALERÍA</a>
+            </li>
+            <li class="elemento-menu">
+              <a href="#ventana-alta-socio" class="elemento-menu__enlace">HAZTE SOCIO</a>
+            </li>
+            <li class="elemento-menu tiene-desplegable">
+              <a href="#actividades" class="elemento-menu__enlace" aria-haspopup="true">
+                ACTIVIDADES
+                <svg class="flecha-desplegable" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 7.5L10 12l4.5-4.5" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+              </a>
+              <div class="panel-desplegable" role="region" aria-label="Submenú Actividades">
+                <div class="panel-desplegable__lista">
+                  <a href="#campamentos" class="tarjeta-desplegable">
+                    <strong>Campamentos de verano</strong>
+                    <span>Ocio inclusivo, respiro familiar y convivencia adaptada.</span>
+                  </a>
+                  <a href="#memorias-anuales" class="tarjeta-desplegable">
+                    <strong>Memorias anuales</strong>
+                    <span>Balance de programas, impacto social y logros alcanzados.</span>
+                  </a>
+                  <a href="#cuentas-anuales" class="tarjeta-desplegable">
+                    <strong>Cuentas anuales</strong>
+                    <span>Transparencia económica, subvenciones y auditoría.</span>
+                  </a>
+                  <a href="#revista-caminando" class="tarjeta-desplegable">
+                    <strong>Revista Caminando</strong>
+                    <span>Publicación periódica con testimonios, noticias y reportajes.</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="elemento-menu">
+              <a href="#talleres" class="elemento-menu__enlace">TALLERES</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="acciones-cabecera">
+          <details class="buscador-desplegable">
+            <summary class="boton-icono" aria-label="Búsqueda web">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2.2" fill="none"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+            </summary>
+            <div class="buscador-desplegable__caja">
+              <form action="#actividades" method="get" class="formulario-busqueda">
+                <label for="campo-busqueda" class="solo-lectores">Buscar en Asociación Caminando</label>
+                <input type="search" id="campo-busqueda" name="q" placeholder="Ej. campamentos, talleres, subvenciones...">
+                <button type="submit" class="boton boton--amarillo boton--pequeno">Buscar</button>
+              </form>
+            </div>
+          </details>
+
+          <a href="#talleres" class="boton boton--borde-oscuro ocultar-movil">TALLERES</a>
+          <a href="#ventana-alta-socio" class="boton boton--amarillo ocultar-movil">HAZTE SOCIO</a>
+
+          <label for="interruptor-menu-movil" class="boton-menu-movil" aria-label="Abrir menú desplegable">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </div>
+
+      <nav class="cajon-menu-movil" aria-label="Menú desplegable móvil">
+        <div class="contenedor cajon-menu-movil__interior">
+          <div class="cajon-menu-movil__superior">
+            <label for="interruptor-menu-movil" class="cajon-menu-movil__cerrar" aria-label="Cerrar menú">✕</label>
+          </div>
+
+          <ul class="lista-menu-movil">
+            <li>
+              <a href="#bienvenida" class="enlace-menu-movil">
+                <svg class="icono-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9.5z" fill="currentColor"/></svg>
+                <span>BIENVENIDA</span>
+              </a>
+            </li>
+            <li>
+              <a href="#galeria" class="enlace-menu-movil">
+                <svg class="icono-menu" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><path d="M21 16l-5-5-6 6-3-3-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                <span>GALERÍA</span>
+              </a>
+            </li>
+            <li>
+              <a href="#ventana-alta-socio" class="enlace-menu-movil">
+                <svg class="icono-menu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5" fill="currentColor"/><path d="M3 19c0-3.3 2.7-6 6-6s6 2.7 6 6" fill="currentColor"/><path d="M19 8v6M16 11h6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                <span>HAZTE SOCIO</span>
+              </a>
+            </li>
+            <li class="grupo-menu-movil">
+              <details open>
+                <summary class="enlace-menu-movil enlace-menu-movil--resumen">
+                  <span class="enlace-menu-movil__izquierda">
+                    <svg class="icono-menu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <span>ACTIVIDADES</span>
+                  </span>
+                  <svg class="flecha-desplegable" viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 7.5L10 12l4.5-4.5" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>
+                </summary>
+                <ul class="sublista-menu-movil">
+                  <li>
+                    <a href="#memorias-anuales" class="enlace-submenu-movil">
+                      <svg class="icono-menu" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6V3z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="2"/></svg>
+                      <span>Memorias anuales</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#cuentas-anuales" class="enlace-submenu-movil">
+                      <svg class="icono-menu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10.5 7.5v6M7.5 10.5h6M15.5 15.5L20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                      <span>Cuentas anuales</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#revista-caminando" class="enlace-submenu-movil">
+                      <svg class="icono-menu" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 9h4v6H7zM14 9h3M14 12h3M14 15h3" stroke="currentColor" stroke-width="1.8"/></svg>
+                      <span>Revista Caminando</span>
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <a href="#talleres" class="enlace-menu-movil">
+                <svg class="icono-menu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1L7 17M17 7l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>TALLERES</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido-principal">
+      <section id="bienvenida" class="carrusel-portada" aria-label="Campamentos y programas destacados">
+        <input type="radio" name="diapositiva-portada" id="diapositiva-1" class="solo-lectores" checked>
+        <input type="radio" name="diapositiva-portada" id="diapositiva-2" class="solo-lectores">
+        <input type="radio" name="diapositiva-portada" id="diapositiva-3" class="solo-lectores">
+
+        <div class="lista-diapositivas">
+          <article class="diapositiva diapositiva--campamentos">
+            <div class="contenedor diapositiva__interior">
+              <div class="diapositiva__contenido">
+                <span class="etiqueta-destacada">CAMPAMENTOS DE VERANO CON APOYO</span>
+                <h1>Vacaciones inclusivas, convivencia y autonomía para todos</h1>
+                <p>La Excma. Diputación de Guadalajara nos concedió una subvención de 3.000€ para financiar este programa de respiro familiar y ocio adaptado durante las vacaciones escolares.</p>
+                <div class="diapositiva__acciones">
+                  <a href="#actividades" class="boton boton--oscuro">Ver programas y actividades</a>
+                  <a href="#ventana-informacion" class="boton boton--claro">Solicitar plaza o información</a>
+                </div>
+              </div>
+              <div class="diapositiva__ilustracion" aria-hidden="true">
+                <div class="tarjeta-ilustracion">
+                  <svg viewBox="0 0 360 260" width="100%" height="100%">
+                    <rect width="360" height="260" rx="20" fill="#1A1A1A"/>
+                    <circle cx="290" cy="60" r="44" fill="#F4B400" opacity="0.22"/>
+                    <circle cx="90" cy="210" r="65" fill="#F4B400" opacity="0.14"/>
+                    <rect x="32" y="34" width="170" height="14" rx="7" fill="#F4B400"/>
+                    <rect x="32" y="60" width="230" height="10" rx="5" fill="#FFFDF5" opacity="0.8"/>
+                    <rect x="32" y="78" width="190" height="10" rx="5" fill="#FFFDF5" opacity="0.55"/>
+                    <g transform="translate(32, 115)">
+                      <rect width="140" height="105" rx="14" fill="#2A2A2A" stroke="#F4B400" stroke-width="2"/>
+                      <circle cx="70" cy="40" r="18" fill="#F4B400"/>
+                      <path d="M40 86c0-16.5 13.5-30 30-30s30 13.5 30 30" fill="#F4B400"/>
+                    </g>
+                    <g transform="translate(188, 115)">
+                      <rect width="140" height="105" rx="14" fill="#F4B400"/>
+                      <text x="18" y="45" fill="#1A1A1A" font-family="sans-serif" font-weight="800" font-size="24">3.000 €</text>
+                      <text x="18" y="70" fill="#1A1A1A" font-family="sans-serif" font-weight="700" font-size="12">Subvención</text>
+                      <text x="18" y="86" fill="#1A1A1A" font-family="sans-serif" font-weight="700" font-size="12">Diputación</text>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="diapositiva diapositiva--talleres">
+            <div class="contenedor diapositiva__interior">
+              <div class="diapositiva__contenido">
+                <span class="etiqueta-destacada etiqueta-destacada--oscura">TALLERES DE AUTONOMÍA Y HABILIDADES</span>
+                <h1>Talleres ocupacionales, digitales y creativos todo el año</h1>
+                <p>Fomentamos el desarrollo personal, la comunicación y la capacitación laboral mediante talleres adaptados a las capacidades e intereses de cada participante.</p>
+                <div class="diapositiva__acciones">
+                  <a href="#talleres" class="boton boton--amarillo">Explorar talleres activos</a>
+                  <a href="#galeria" class="boton boton--borde-oscuro">Ver galería de actividades</a>
+                </div>
+              </div>
+              <div class="diapositiva__ilustracion" aria-hidden="true">
+                <div class="tarjeta-ilustracion">
+                  <svg viewBox="0 0 360 260" width="100%" height="100%">
+                    <rect width="360" height="260" rx="20" fill="#FEF3C7" stroke="#1A1A1A" stroke-width="3"/>
+                    <circle cx="180" cy="115" r="56" fill="#F4B400"/>
+                    <path d="M156 115l16 16 34-36" stroke="#1A1A1A" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="65" y="192" width="230" height="34" rx="17" fill="#1A1A1A"/>
+                    <text x="180" y="214" text-anchor="middle" fill="#F4B400" font-family="sans-serif" font-weight="800" font-size="13">PARTICIPACIÓN ACTIVA 100%</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="diapositiva diapositiva--transparencia">
+            <div class="contenedor diapositiva__interior">
+              <div class="diapositiva__contenido">
+                <span class="etiqueta-destacada">TRANSPARENCIA Y PARTICIPACIÓN</span>
+                <h1>Memorias anuales, cuentas claras y Revista Caminando</h1>
+                <p>Ponemos a disposición de socios, familias e instituciones toda nuestra documentación anual, auditorías y publicaciones divulgativas.</p>
+                <div class="diapositiva__acciones">
+                  <a href="#memorias-anuales" class="boton boton--oscuro">Consultar documentación</a>
+                  <a href="#ventana-alta-socio" class="boton boton--claro">Hazte socio/a</a>
+                </div>
+              </div>
+              <div class="diapositiva__ilustracion" aria-hidden="true">
+                <div class="tarjeta-ilustracion">
+                  <svg viewBox="0 0 360 260" width="100%" height="100%">
+                    <rect width="360" height="260" rx="20" fill="#1A1A1A"/>
+                    <path d="M180 48c-22-24-62-16-68 16-6 34 32 62 68 92 36-30 74-58 68-92-6-32-46-40-68-16z" fill="#F4B400"/>
+                    <rect x="75" y="182" width="210" height="40" rx="10" fill="#2B2B2B" stroke="#F4B400" stroke-width="2"/>
+                    <text x="180" y="207" text-anchor="middle" fill="#FFFDF5" font-family="sans-serif" font-weight="700" font-size="14">TRANSPARENCIA Y COMPROMISO</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="contenedor controles-carrusel">
+          <div class="puntos-carrusel" role="tablist" aria-label="Seleccionar diapositiva destacada">
+            <label for="diapositiva-1" class="punto-carrusel" aria-label="Diapositiva 1: Campamentos de verano">1</label>
+            <label for="diapositiva-2" class="punto-carrusel" aria-label="Diapositiva 2: Talleres de autonomía">2</label>
+            <label for="diapositiva-3" class="punto-carrusel" aria-label="Diapositiva 3: Transparencia y memorias">3</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="franja-aviso" aria-label="Subvención y convocatoria abierta">
+        <div class="contenedor franja-aviso__interior">
+          <div class="franja-aviso__etiqueta">PROGRAMA SUBVENCIONADO</div>
+          <p class="franja-aviso__texto">
+            <strong>Campamentos de verano con apoyo:</strong> Financiado con la colaboración de la Excma. Diputación de Guadalajara (3.000€) para facilitar la conciliación familiar.
+          </p>
+          <a href="#ventana-informacion" class="boton boton--oscuro boton--pequeno">Solicitar plaza</a>
+        </div>
+      </section>
+
+      <section id="actividades" class="seccion">
+        <div class="contenedor">
+          <header class="encabezado-seccion">
+            <div>
+              <span class="antetitulo">ACTIVIDADES Y TRANSPARENCIA</span>
+              <h2>Áreas de actuación y documentación oficial</h2>
+            </div>
+            <a href="#revista-caminando" class="enlace-flecha">Ver todas las publicaciones →</a>
+          </header>
+
+          <div class="cuadricula-documentos">
+            <article id="memorias-anuales" class="tarjeta-documento">
+              <div class="tarjeta-documento__cabecera tarjeta-documento__cabecera--ambar">
+                <span class="tarjeta-documento__etiqueta">Memorias anuales</span>
+                <div class="sello-fecha" aria-label="Publicación anual">
+                  <span class="sello-fecha__numero">2026</span>
+                  <span class="sello-fecha__texto">MEM</span>
+                </div>
+              </div>
+              <div class="tarjeta-documento__cuerpo">
+                <h3>Memoria Anual de Actividades y Resultados</h3>
+                <p>Recopilación detallada de los programas ejecutados, horas de atención directa, perfil de las personas beneficiarias y logros alcanzados durante el ejercicio.</p>
+                <div class="tarjeta-documento__pie">
+                  <a href="#ventana-memoria" class="enlace-negrita">Consultar memoria →</a>
+                  <span class="dato-secundario">Edición 2026</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="cuentas-anuales" class="tarjeta-documento">
+              <div class="tarjeta-documento__cabecera tarjeta-documento__cabecera--oscura">
+                <span class="tarjeta-documento__etiqueta">Cuentas anuales</span>
+                <div class="sello-fecha" aria-label="Balance económico">
+                  <span class="sello-fecha__numero">100%</span>
+                  <span class="sello-fecha__texto">CLARO</span>
+                </div>
+              </div>
+              <div class="tarjeta-documento__cuerpo">
+                <h3>Cuentas Anuales, Balance y Subvenciones Públicas</h3>
+                <p>Desglose transparente de ingresos, cuotas de socios, subvenciones institucionales como la de la Diputación de Guadalajara y destino íntegro a proyectos sociales.</p>
+                <div class="tarjeta-documento__pie">
+                  <a href="#ventana-cuentas" class="enlace-negrita">Ver cuentas anuales →</a>
+                  <span class="dato-secundario">Auditoría verificada</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="revista-caminando" class="tarjeta-documento">
+              <div class="tarjeta-documento__cabecera tarjeta-documento__cabecera--dorada">
+                <span class="tarjeta-documento__etiqueta">Revista Caminando</span>
+                <div class="sello-fecha" aria-label="Último número">
+                  <span class="sello-fecha__numero">Nº 18</span>
+                  <span class="sello-fecha__texto">REV</span>
+                </div>
+              </div>
+              <div class="tarjeta-documento__cuerpo">
+                <h3>Revista Caminando: Voces de nuestros protagonistas</h3>
+                <p>Reportajes escritos por los participantes de nuestros talleres, entrevistas a familias, crónicas de los campamentos y novedades sobre derechos y discapacidad.</p>
+                <div class="tarjeta-documento__pie">
+                  <a href="#ventana-revista" class="enlace-negrita">Leer revista →</a>
+                  <span class="dato-secundario">Publicación trimestral</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="franja-impacto" aria-label="Cifras relevantes de impacto social">
+        <div class="contenedor">
+          <div class="franja-impacto__encabezado">
+            <span class="antetitulo antetitulo--dorado">NUESTRO IMPACTO EN CIFRAS</span>
+            <h2>Caminando juntos por la inclusión real</h2>
+          </div>
+
+          <div class="cuadricula-cifras">
+            <div class="tarjeta-cifra">
+              <span class="tarjeta-cifra__numero">1.450</span>
+              <span class="tarjeta-cifra__descripcion">personas con discapacidad y familias acompañadas al año</span>
+            </div>
+            <div class="tarjeta-cifra">
+              <span class="tarjeta-cifra__numero">340</span>
+              <span class="tarjeta-cifra__descripcion">personas socias y voluntarias comprometidas</span>
+            </div>
+            <div class="tarjeta-cifra">
+              <span class="tarjeta-cifra__numero">18</span>
+              <span class="tarjeta-cifra__descripcion">talleres semanales y campamentos inclusivos</span>
+            </div>
+            <div class="tarjeta-cifra">
+              <span class="tarjeta-cifra__numero">96%</span>
+              <span class="tarjeta-cifra__descripcion">de recursos destinados directamente a programas sociales</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="talleres" class="seccion seccion--crema">
+        <div class="contenedor">
+          <header class="encabezado-seccion">
+            <div>
+              <span class="antetitulo">TALLERES Y FORMACIÓN</span>
+              <h2>Talleres de autonomía, ocio y desarrollo personal</h2>
+            </div>
+            <a href="#ventana-informacion" class="enlace-flecha">Inscribirse en un taller →</a>
+          </header>
+
+          <div class="cuadricula-talleres">
+            <article class="tarjeta-taller">
+              <div class="tarjeta-taller__superior">
+                <span class="insignia-taller">AUTONOMÍA PERSONAL</span>
+                <h3>Taller de Vida Independiente y Habilidades Diarias</h3>
+              </div>
+              <p>Apoyo práctico en gestión doméstica, movilidad urbana, compras responsables y toma de decisiones para potenciar la independencia en el día a día.</p>
+              <a href="#ventana-informacion" class="boton boton--borde-oscuro">Solicitar plaza</a>
+            </article>
+
+            <article id="campamentos" class="tarjeta-taller tarjeta-taller--destacada">
+              <div class="tarjeta-taller__superior">
+                <span class="insignia-taller insignia-taller--oscura">CAMPAMENTOS Y OCIO</span>
+                <h3>Campamentos de Verano y Respiro Familiar</h3>
+              </div>
+              <p>Estancias estivales con monitores especializados en educación especial, actividades en la naturaleza y apoyo integral para conciliación familiar.</p>
+              <a href="#ventana-informacion" class="boton boton--oscuro">Reservar información</a>
+            </article>
+
+            <article class="tarjeta-taller">
+              <div class="tarjeta-taller__superior">
+                <span class="insignia-taller">EXPRESIÓN Y COMPETENCIAS</span>
+                <h3>Taller de Redacción de Revista y Competencias Digitales</h3>
+              </div>
+              <p>Espacio creativo donde los participantes redactan la Revista Caminando, aprenden herramientas digitales y trabajan en equipo.</p>
+              <a href="#ventana-informacion" class="boton boton--borde-oscuro">Conocer horarios</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="seccion">
+        <div class="contenedor">
+          <header class="encabezado-seccion">
+            <div>
+              <span class="antetitulo">GALERÍA DE ACTIVIDADES</span>
+              <h2>Momentos compartidos en Asociación Caminando</h2>
+            </div>
+            <a href="#ventana-alta-socio" class="enlace-flecha">Forma parte de nuestra comunidad →</a>
+          </header>
+
+          <div class="cuadricula-galeria">
+            <article class="tarjeta-galeria">
+              <figure class="tarjeta-galeria__imagen">
+                <img src="imagenes/campamento-verano.svg" alt="Ilustración de participantes disfrutando del campamento de verano en la naturaleza con apoyo de monitores" width="600" height="340">
+              </figure>
+              <div class="tarjeta-galeria__cuerpo">
+                <h3>Campamento de Verano en la Naturaleza</h3>
+                <p>Convivencia, rutas adaptadas, juegos cooperativos y actividades acuáticas acompañados por nuestro equipo de monitores.</p>
+                <div class="bloque-progreso" aria-label="Participación: 45 plazas cubiertas">
+                  <div class="bloque-progreso__datos">
+                    <span>45 participantes</span>
+                    <strong>Edición Verano</strong>
+                  </div>
+                  <div class="barra-progreso"><span class="barra-progreso__relleno barra-progreso__relleno--completo"></span></div>
+                </div>
+                <a href="#ventana-informacion" class="boton boton--amarillo boton--ancho-completo">UNIRSE A LA PRÓXIMA EDICIÓN</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-galeria">
+              <figure class="tarjeta-galeria__imagen">
+                <img src="imagenes/taller-artes.svg" alt="Ilustración de obras de pintura y cerámica creadas en el taller de artes plásticas" width="600" height="340">
+              </figure>
+              <div class="tarjeta-galeria__cuerpo">
+                <h3>Taller de Artes Plásticas y Cerámica</h3>
+                <p>Exposición anual de obras elaboradas por los alumnos y alumnas de los talleres creativos de Asociación Caminando.</p>
+                <div class="bloque-progreso" aria-label="Exposición abierta todo el año">
+                  <div class="bloque-progreso__datos">
+                    <span>60 obras expuestas</span>
+                    <strong>Aula Creativa</strong>
+                  </div>
+                  <div class="barra-progreso"><span class="barra-progreso__relleno barra-progreso__relleno--alto"></span></div>
+                </div>
+                <a href="#talleres" class="boton boton--amarillo boton--ancho-completo">VER TALLERES CREATIVOS</a>
+              </div>
+            </article>
+
+            <article class="tarjeta-galeria">
+              <figure class="tarjeta-galeria__imagen">
+                <img src="imagenes/encuentro-familias.svg" alt="Ilustración de familias, socios y voluntarios reunidos en la jornada anual de convivencia" width="600" height="340">
+              </figure>
+              <div class="tarjeta-galeria__cuerpo">
+                <h3>Encuentro Anual de Familias y Socios</h3>
+                <p>Jornada de convivencia intergeneracional donde compartimos la memoria anual y celebramos los avances de nuestros socios.</p>
+                <div class="bloque-progreso" aria-label="Más de 200 asistentes">
+                  <div class="bloque-progreso__datos">
+                    <span>220 asistentes</span>
+                    <strong>Comunidad</strong>
+                  </div>
+                  <div class="barra-progreso"><span class="barra-progreso__relleno barra-progreso__relleno--muy-alto"></span></div>
+                </div>
+                <a href="#ventana-alta-socio" class="boton boton--amarillo boton--ancho-completo">HAZTE SOCIO/A</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="franja-atencion">
+        <div class="contenedor franja-atencion__interior">
+          <div class="franja-atencion__contenido">
+            <span class="etiqueta-destacada etiqueta-destacada--oscura">ATENCIÓN DIRECTA A FAMILIAS</span>
+            <h2>Orientación cercana con solo un contacto</h2>
+            <p>Te asesoramos sobre plazas en talleres, campamentos de verano, trámites de discapacidad y programas de apoyo familiar.</p>
+          </div>
+          <div class="franja-atencion__accion">
+            <a href="#ventana-informacion" class="boton boton--oscuro boton--grande">SOLICITA INFORMACIÓN</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion--crema">
+        <div class="contenedor">
+          <header class="encabezado-seccion">
+            <div>
+              <span class="antetitulo">RECURSOS Y PUBLICACIONES</span>
+              <h2>Accesos directos de Asociación Caminando</h2>
+            </div>
+          </header>
+
+          <div class="cuadricula-accesos">
+            <a href="#memorias-anuales" class="tarjeta-acceso">
+              <strong>Memorias anuales</strong>
+              <span>Consulta el impacto social y proyectos de cada ejercicio</span>
+              <span class="tarjeta-acceso__enlace">Ver más →</span>
+            </a>
+            <a href="#cuentas-anuales" class="tarjeta-acceso">
+              <strong>Cuentas anuales</strong>
+              <span>Balances auditados y subvenciones recibidas</span>
+              <span class="tarjeta-acceso__enlace">Ver más →</span>
+            </a>
+            <a href="#revista-caminando" class="tarjeta-acceso">
+              <strong>Revista Caminando</strong>
+              <span>Artículos, entrevistas y actualidad de la asociación</span>
+              <span class="tarjeta-acceso__enlace">Ver más →</span>
+            </a>
+            <a href="#talleres" class="tarjeta-acceso">
+              <strong>Talleres y Ocio</strong>
+              <span>Inscripciones abiertas en autonomía y campamentos</span>
+              <span class="tarjeta-acceso__enlace">Ver más →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="franja-colaboradores" aria-label="Entidades colaboradoras y certificaciones">
+        <div class="contenedor franja-colaboradores__interior">
+          <div class="elemento-colaborador">
+            <span class="elemento-colaborador__siglas">DG</span>
+            <div>
+              <strong>Diputación de Guadalajara</strong>
+              <span>Entidad colaboradora en campamentos</span>
+            </div>
+          </div>
+          <div class="elemento-colaborador">
+            <span class="elemento-colaborador__siglas">AC</span>
+            <div>
+              <strong>Atención Integral</strong>
+              <span>Apoyo a personas y familias</span>
+            </div>
+          </div>
+          <div class="elemento-colaborador">
+            <span class="elemento-colaborador__siglas">100%</span>
+            <div>
+              <strong>Transparencia Institucional</strong>
+              <span>Cuentas y memorias públicas</span>
+            </div>
+          </div>
+          <div class="elemento-colaborador">
+            <span class="elemento-colaborador__siglas">UP</span>
+            <div>
+              <strong>Utilidad Pública</strong>
+              <span>Asociación sin ánimo de lucro</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="pie-sitio">
+      <div class="contenedor pie-sitio__superior">
+        <div class="pie-marca">
+          <div class="marca-asociacion marca-asociacion--clara">
+            <div class="marca-asociacion__emblema" aria-hidden="true">
+              <svg viewBox="0 0 40 40" width="36" height="36">
+                <circle cx="20" cy="20" r="18" fill="#F4B400"/>
+                <path d="M17 8h6v9h9v6h-9v9h-6v-9H8v-6h9V8z" fill="#1A1A1A"/>
+              </svg>
+            </div>
+            <div class="marca-asociacion__textos">
+              <span class="marca-asociacion__nombre">Asociación Caminando</span>
+              <span class="marca-asociacion__lema">Cada vez más cerca de las personas</span>
+            </div>
+          </div>
+          <p class="pie-descripcion">Entidad dedicada al apoyo integral de personas con discapacidad y sus familias mediante talleres, campamentos de verano, ocio inclusivo y defensa de derechos.</p>
+          <div class="pie-botones">
+            <a href="#ventana-alta-socio" class="boton boton--amarillo boton--pequeno">HAZTE SOCIO</a>
+            <a href="#talleres" class="boton boton--borde-claro boton--pequeno">VER TALLERES</a>
+          </div>
+        </div>
+
+        <div class="pie-columna">
+          <h3>Navegación</h3>
+          <ul>
+            <li><a href="#bienvenida">Bienvenida</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#ventana-alta-socio">Hazte socio</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#talleres">Talleres</a></li>
+          </ul>
+        </div>
+
+        <div class="pie-columna">
+          <h3>Transparencia</h3>
+          <ul>
+            <li><a href="#memorias-anuales">Memorias anuales</a></li>
+            <li><a href="#cuentas-anuales">Cuentas anuales</a></li>
+            <li><a href="#revista-caminando">Revista Caminando</a></li>
+            <li><a href="#ventana-informacion">Subvenciones y proyectos</a></li>
+          </ul>
+        </div>
+
+        <div class="pie-columna">
+          <h3>Contacto y Atención</h3>
+          <ul>
+            <li><a href="#ventana-informacion">Solicitar información</a></li>
+            <li><a href="#ventana-informacion">Atención a familias</a></li>
+            <li><a href="#ventana-socios">Área privada de socios</a></li>
+            <li><a href="#inicio">Volver arriba ↑</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pie-sitio__inferior">
+        <div class="contenedor pie-sitio__inferior-interior">
+          <p>Asociación Caminando 2026. Todos los derechos reservados. | Entidad sin ánimo de lucro.</p>
+          <div class="enlaces-legales">
+            <a href="#bienvenida">Aviso Legal</a>
+            <a href="#bienvenida">Política de Privacidad</a>
+            <a href="#bienvenida">Política de Cookies</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="ventana-alta-socio" class="ventana-modal" role="dialog" aria-modal="true" aria-labelledby="titulo-alta-socio">
+      <div class="ventana-modal__caja">
+        <div class="ventana-modal__cabecera">
+          <h2 id="titulo-alta-socio">Hazte Socio/a de Asociación Caminando</h2>
+          <a href="#contenido-principal" class="ventana-modal__cerrar" aria-label="Cerrar ventana">✕</a>
+        </div>
+        <form action="#contenido-principal" method="get" class="formulario-modal">
+          <p>Tu cuota permite mantener nuestros talleres semanales y financiar campamentos inclusivos.</p>
+          <div class="cuadricula-cuotas">
+            <label class="opcion-cuota">
+              <input type="radio" name="cuota" value="12" checked>
+              <span>12 € / mes</span>
+            </label>
+            <label class="opcion-cuota">
+              <input type="radio" name="cuota" value="25">
+              <span>25 € / mes</span>
+            </label>
+            <label class="opcion-cuota">
+              <input type="radio" name="cuota" value="50">
+              <span>50 € / mes</span>
+            </label>
+          </div>
+          <div class="grupo-campo">
+            <label for="socio-nombre">Nombre y apellidos</label>
+            <input type="text" id="socio-nombre" required placeholder="Ej. Laura García">
+          </div>
+          <div class="grupo-campo">
+            <label for="socio-correo">Correo electrónico</label>
+            <input type="email" id="socio-correo" required placeholder="laura@ejemplo.es">
+          </div>
+          <button type="submit" class="boton boton--amarillo boton--ancho-completo">Confirmar alta de socio/a</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="ventana-informacion" class="ventana-modal" role="dialog" aria-modal="true" aria-labelledby="titulo-informacion">
+      <div class="ventana-modal__caja">
+        <div class="ventana-modal__cabecera">
+          <h2 id="titulo-informacion">Solicitar Información o Plaza en Actividades</h2>
+          <a href="#contenido-principal" class="ventana-modal__cerrar" aria-label="Cerrar ventana">✕</a>
+        </div>
+        <form action="#contenido-principal" method="get" class="formulario-modal">
+          <div class="grupo-campo">
+            <label for="actividad-interes">Actividad o consulta de interés</label>
+            <select id="actividad-interes">
+              <option>Campamentos de verano con apoyo</option>
+              <option>Talleres de autonomía personal</option>
+              <option>Taller de Revista Caminando y digital</option>
+              <option>Información general para familias</option>
+            </select>
+          </div>
+          <div class="grupo-campo">
+            <label for="datos-contacto">Teléfono o correo de contacto</label>
+            <input type="text" id="datos-contacto" required placeholder="600 000 000 / correo@ejemplo.es">
+          </div>
+          <div class="grupo-campo">
+            <label for="observaciones-consulta">Observaciones o consulta</label>
+            <textarea id="observaciones-consulta" rows="3" placeholder="Escribe aquí tu consulta o necesidades específicas"></textarea>
+          </div>
+          <button type="submit" class="boton boton--oscuro boton--ancho-completo">Enviar solicitud</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="ventana-socios" class="ventana-modal" role="dialog" aria-modal="true" aria-labelledby="titulo-area-socios">
+      <div class="ventana-modal__caja">
+        <div class="ventana-modal__cabecera">
+          <h2 id="titulo-area-socios">Área Privada de Socios y Familias</h2>
+          <a href="#contenido-principal" class="ventana-modal__cerrar" aria-label="Cerrar ventana">✕</a>
+        </div>
+        <form action="#contenido-principal" method="get" class="formulario-modal">
+          <div class="grupo-campo">
+            <label for="usuario-nif">NIF / Correo de socio</label>
+            <input type="text" id="usuario-nif" required placeholder="00000000X">
+          </div>
+          <div class="grupo-campo">
+            <label for="usuario-clave">Contraseña</label>
+            <input type="password" id="usuario-clave" required placeholder="••••••••">
+          </div>
+          <button type="submit" class="boton boton--amarillo boton--ancho-completo">Acceder</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="ventana-memoria" class="ventana-modal" role="dialog" aria-modal="true" aria-labelledby="titulo-memoria">
+      <div class="ventana-modal__caja">
+        <div class="ventana-modal__cabecera">
+          <h2 id="titulo-memoria">Memoria Anual 2026 — Asociación Caminando</h2>
+          <a href="#actividades" class="ventana-modal__cerrar" aria-label="Cerrar ventana">✕</a>
+        </div>
+        <div class="formulario-modal">
+          <p><strong>Resumen ejecutivo:</strong> Durante el último ejercicio hemos atendido a 1.450 personas y familias, desarrollado 18 talleres semanales y ejecutado el programa de campamentos de verano subvencionado por la Diputación de Guadalajara.</p>
+          <a href="#actividades" class="boton boton--oscuro boton--ancho-completo">Volver a actividades</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="ventana-cuentas" class="ventana-modal" role="dialog" aria-modal="true" aria-labelledby="titulo-cuentas">
+      <div class="ventana-modal__caja">
+        <div class="ventana-modal__cabecera">
+          <h2 id="titulo-cuentas">Cuentas Anuales y Transparencia</h2>
+          <a href="#actividades" class="ventana-modal__cerrar" aria-label="Cerrar ventana">✕</a>
+        </div>
+        <div class="formulario-modal">
+          <p><strong>Distribución de recursos:</strong> El 96% de los fondos procedentes de cuotas de socios y subvenciones públicas (como los 3.000€ concedidos por la Excma. Diputación de Guadalajara) se destina íntegramente a programas directos.</p>
+          <a href="#actividades" class="boton boton--oscuro boton--ancho-completo">Volver a actividades</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="ventana-revista" class="ventana-modal" role="dialog" aria-modal="true" aria-labelledby="titulo-revista">
+      <div class="ventana-modal__caja">
+        <div class="ventana-modal__cabecera">
+          <h2 id="titulo-revista">Revista Caminando — Edición Nº 18</h2>
+          <a href="#actividades" class="ventana-modal__cerrar" aria-label="Cerrar ventana">✕</a>
+        </div>
+        <div class="formulario-modal">
+          <p><strong>En este número:</strong> Crónica de nuestros campamentos de verano, entrevistas a participantes de los talleres de autonomía y guía de recursos en Guadalajara.</p>
+          <a href="#actividades" class="boton boton--amarillo boton--ancho-completo">Cerrar vista previa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
