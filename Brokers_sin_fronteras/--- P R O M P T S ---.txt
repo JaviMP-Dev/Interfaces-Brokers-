@@ -6,3 +6,5 @@ usa colores amarillos para el css y usa la menor cantidad de jscript posible, de
 -Bien, ahora separame el css y el jtml en dos archivos distintos, y cambia el nombre de la pagina por asociacion caminando, quita todos los comentarios del codigo html y en el menu desplegable debe llevar los apartados que se ven en la imagen, y dame un archivo zip con el proyecto
 
 -Quita las opciones de accesibilidad como el alto contraste
+
+-Cambia los nombres de las variables y clases por nombres en español que describen lo que hacen, quita el cambio de lenguaje entre catalan y español y el "estamos aqui para ayudarte" flotante, en las tarjetas de la galeria de actividades tambien deben ir imagenes
